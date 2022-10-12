@@ -19,6 +19,8 @@ func Encode(content string, logo image.Image, size int, outputFormat string) (*b
 		return nil, err
 	}
 
+	code.DisableBorder = true
+
 	img := code.Image(size)
 	p, ok := img.(*image.Paletted)
 	if !ok {
