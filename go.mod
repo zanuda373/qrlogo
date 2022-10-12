@@ -1,4 +1,4 @@
-module qrlogo
+module github.com/zanuda373/qrlogo
 
 go 1.18
 
